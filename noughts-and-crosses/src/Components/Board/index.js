@@ -1,11 +1,12 @@
 import React from "react";
 import Square from "../Square";
 
-function Board ({board, move}) {
+function Board ({board,playerMove}) {
 return (
    board.map((_, index) => {
-    return (<div>
-      <Square key={index} move={move} />
+    return (
+    <div>
+      <Square playerMove={playerMove} key={index} move={move} />
     </div>)
    })
 )}

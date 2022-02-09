@@ -1,10 +1,11 @@
 import React from "react"
 
-function Square ({ move }) {
+
+function Square ({ move, playerMove }) {
 return (
 <div>
-  <button>
-   {move}
+  <button onClick={() => playerMove(id, turn) }>
+   {move} "Press me!"
   </button>
 </div>
 )}
