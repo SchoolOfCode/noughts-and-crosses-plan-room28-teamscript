@@ -3,13 +3,12 @@ import Square from "../Square";
 
 function Board ({board, move}) {
 return (
-   board.map((square, index) => {
-    return <Square key={index} move={move} />
+   board.map((_, index) => {
+    return (<div>
+      <Square key={index} move={move} />
+    </div>)
    })
 )}
-
-
-
 
 
 export default Board;
